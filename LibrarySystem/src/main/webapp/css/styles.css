@@ -1,0 +1,41 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	
+}
+
+
+#home{
+	min-height: 100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/books.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+
+.info-text{
+	width:99%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	
+}
+.info-text h1{
+	font-size: 62px;
+	font-weight: 700;
+}
+.info-text p{
+	margin: 10px 0 40px;
+	font-size: 14px;
+}
