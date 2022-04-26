@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Open Sans', sans-serif;
+	position: relatives
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:1.1em;
+	font-weight: 300;
+	line-height: 1.7em;
+	color: #999;
+}
+
+.admin-table{
+	position: absolute;
+	top: 0;
+	right: 0;
+	heigth: 100vh;
+	width: 80%;
+
+}
