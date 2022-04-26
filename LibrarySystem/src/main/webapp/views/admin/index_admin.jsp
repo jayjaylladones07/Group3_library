@@ -27,7 +27,7 @@
 				<li class=""><a href="#homesubmenu">Issue</a></li>
 				<li class=""><a href="#homesubmenu">Return</a></li>
 				<li class=""><a href="#homesubmenu">View Order</a></li>
-				<li class=""><a href="#homesubmenu">Logout</a></li>		
+				<li class=""><a href="<%=request.getContextPath()%>/views/index.jsp">Logout</a></li>		
 		
 			</div>
 		</nav>
