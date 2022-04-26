@@ -28,7 +28,12 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 				<li class=""><a href="#homesubmenu">Issue</a></li>
 				<li class=""><a href="#homesubmenu">Return</a></li>
 				<li class=""><a href="#homesubmenu">View Order</a></li>
-				<li class=""><a href="#homesubmenu">Logout</a></li>		
+
+				<li class=""><a href="<%=request.getContextPath()%>/views/index.jsp">Logout</a></li>		
+		
+
+					
+
 			</div>
 		</nav>
 	</div>
