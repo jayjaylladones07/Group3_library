@@ -22,30 +22,35 @@ public class LoginServlet extends HttpServlet {
 	   }
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		response.sendRedirect("views/login.jsp");
 	}
 
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String uname = request.getParameter("username");
+		String username = request.getParameter("username");
 		String password = request.getParameter("password");
 		
-		System.out.print(uname+" "+password);
+		System.out.print(username+" "+password);
 		
 		LoginModel lm = new LoginModel();
-		lm.setUsername(uname);
+		lm.setUsername(username);
 		lm.setPassword(password);
 		
 		try {
-			if(ld.validate(lm)){
-				response.sendRedirect("views/member_page.jsp");
-			}else {
-				response.sendRedirect("views/login.jsp");
+				if(ld.validate(lm)){
+					response.sendRedirect("views/member_page.jsp");
+				}else if(ld.validateAdmin(lm)){
+					response.sendRedirect("views/admin/index_admin.jsp");
+				}else {
+					response.sendRedirect("views/index.jsp");
+				}
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-		} catch (ClassNotFoundException e) {
-			
-			e.printStackTrace();
-		}
 		
 	
 	}
