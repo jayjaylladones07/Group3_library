@@ -11,8 +11,10 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 
-<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/sidebar_style.css">
 
+<style>
+<%@include file="/css/sidebar_style.css"%>
+</style> 
 </head>
 <body>
 
@@ -28,7 +30,12 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 				<li class=""><a href="#homesubmenu">Issue</a></li>
 				<li class=""><a href="#homesubmenu">Return</a></li>
 				<li class=""><a href="#homesubmenu">View Order</a></li>
-				<li class=""><a href="#homesubmenu">Logout</a></li>		
+
+				<li class=""><a href="<%=request.getContextPath()%>/views/index.jsp">Logout</a></li>		
+		
+
+					
+
 			</div>
 		</nav>
 	</div>
