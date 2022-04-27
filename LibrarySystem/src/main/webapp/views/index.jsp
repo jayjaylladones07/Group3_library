@@ -15,8 +15,12 @@
 	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
 	crossorigin="anonymous">
 
-<link rel="stylesheet" type="text/css" href="../css/styles.css">
+
+<style>
+<%@include file="../css/styles.css"%>
+</style> 
 </head>
+
 <body>
 
 <jsp:include page="navbar.jsp"></jsp:include>
